@@ -1,0 +1,28 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Poetry
+poetry.lock
+.cache/
+.installed.cfg
+
+# Virtualenv (if created in project)
+.env
+.env/
+.venv/
+
+# Testing
+.coverage
+htmlcov/
+.cache/
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# VSCode or PyCharm config (optional)
+.vscode/
+.idea/
