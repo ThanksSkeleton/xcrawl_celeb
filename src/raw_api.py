@@ -2,6 +2,7 @@ from themoviedb import TMDb
 from themoviedb.schemas import People
 from themoviedb.utils import as_dataclass
 
+
 class RawAPI:
     def __init__(self, api_key: str):
         self.tmdb = TMDb(api_key)

@@ -1,0 +1,4 @@
+{ 
+    "python.defaultInterpreterPath": "<Set this in VSCODE to the Poetry related interpreter. Machine+User specific.>",
+    "editor.formatOnSave": true
+}

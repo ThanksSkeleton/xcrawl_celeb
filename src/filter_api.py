@@ -1,6 +1,7 @@
 from typing import List, Dict, Any
-from .raw_api import RawAPI  # Assuming RawAPI is implemented in raw_api.py
-from .tmdb_schemas import PartialPerson, CastMovie, CastTV  # Assuming these are defined in tmdb_schemas.py
+from .raw_api import RawAPI
+from themoviedb.schemas import People, Person, CastMovie, CastTV
+
 
 class FilterAPI:
     def __init__(self, raw_api: RawAPI):
@@ -8,12 +9,12 @@ class FilterAPI:
 
     def get_celeb_info(self, name: str) -> Dict[str, Any]:
         # Fetch raw data from the Raw API
-        people = self.raw_api.people(query=name)
+        people: People = self.raw_api.people(query=name)
         if not people or not people.results:
             raise ValueError("No celebrities found.")
 
         # Filter for cast members only and sort by popularity
-        cast_members = [
+        cast_members: List[Person] = [
             person for person in people.results
             if person.known_for_department == "Acting" and person.known_for
         ]
@@ -21,10 +22,10 @@ class FilterAPI:
             raise ValueError("No cast members found.")
 
         # Select the most popular person
-        most_popular_person = max(cast_members, key=lambda p: p.popularity)
+        most_popular_person: Person = max(cast_members, key=lambda p: p.popularity)
 
         # Ensure the person has at least one movie or TV credit
-        credits = [
+        credits: List[CastMovie | CastTV] = [
             media for media in most_popular_person.known_for
             if isinstance(media, (CastMovie, CastTV))
         ]
@@ -32,10 +33,10 @@ class FilterAPI:
             raise ValueError("No acting credits found for the selected person.")
 
         # Sort credits by popularity and limit to top 3
-        top_credits = sorted(credits, key=lambda c: c.popularity, reverse=True)[:3]
+        top_credits: List[CastMovie | CastTV] = sorted(credits, key=lambda c: c.popularity, reverse=True)[:3]
 
         # Format the output
-        formatted_credits = [
+        formatted_credits: List[str] = [
             f"{credit.title or credit.name} ({credit.release_date.year if credit.release_date else 'N/A'})"
             for credit in top_credits
         ]
