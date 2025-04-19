@@ -1,17 +1,8 @@
 from themoviedb import TMDb  # type: ignore
-from themoviedb.schemas import People, Person, CastCombined  # type: ignore
+from themoviedb.schemas import People, Person, PartialMedia  # type: ignore
 from typing import List, Dict, Any
-from dataclasses import dataclass
 
-
-@dataclass
-class CelebrityInfo:
-    tmdb_id: int
-    name: str
-    gender: str
-    headshot: str
-    credits: List[str]
-
+from celebrity_info import CelebrityInfo
 
 class tmdb_api:
     def __init__(self, api_key: str):
@@ -27,11 +18,8 @@ class tmdb_api:
         # Find the most popular person
         most_popular_person: Person = max(people.results, key=lambda p: p.popularity)
 
-        # Fetch combined credits for the most popular person
-        cast: List[CastCombined] = self.tmdb.person(most_popular_person.id).movie_credits().cast
-
         # Sort credits by popularity and limit to top 3
-        top_credits: List[CastCombined] = sorted(cast, key=lambda c: c.popularity, reverse=True)[:3]
+        top_credits: List[PartialMedia] = sorted(most_popular_person.known_for, key=lambda c: c.popularity, reverse=True)[:3]
 
         # Format the output
         formatted_credits: List[str] = [

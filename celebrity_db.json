@@ -1,0 +1,13 @@
+{
+    "31": {
+        "tmdb_id": 31,
+        "name": "Tom Hanks",
+        "gender": "MALE",
+        "headshot": "https://image.tmdb.org/t/p/original/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+        "credits": [
+            "Toy Story (1995)",
+            "The Green Mile (1999)",
+            "Forrest Gump (1994)"
+        ]
+    }
+}

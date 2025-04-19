@@ -30,6 +30,16 @@ This project generates distinctive celebrity cards to support offline TTRPG play
 ### 4. CSV Loader
 - Reads CSV rows and prepares names for processing.
 
+
+@dataclass
+class CelebrityInfo:
+    tmdb_id: int
+    name: str
+    gender: str
+    headshot: str
+    credits: List[str]
+
+
 ### 5. Database Loader + Logic
 - Loads a flat JSON database of already-processed celebrities.
 - Skips duplicates by TMDb ID.
@@ -51,7 +61,7 @@ This project generates distinctive celebrity cards to support offline TTRPG play
 ### 7. Add API Output to DB
 - Stores processed data keyed by TMDb ID.
 
-### 8. Manual Review of API Output (TBD)
+### 8. Manual Review of API Output (OPTIONAL)
 - For any ambiguous entries returned by TMDb (multiple name matches, movie choices, headshots), prompt the user to review and select the correct data.
 - Output is the cleaned, verified selection to be used in final card generation.
 - Implementation method (e.g., local UI, CLI interface, or semi-automated GPT chat loop) is to be determined after investigation.
