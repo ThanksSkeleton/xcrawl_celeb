@@ -6,5 +6,5 @@ class CelebrityInfo:
     tmdb_id: int
     name: str
     gender: str
-    headshot: str
+    headshots: List[str]
     credits: List[str]

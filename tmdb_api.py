@@ -26,11 +26,15 @@ class tmdb_api:
             f"{credit.title or credit.name} ({credit.release_date.year if credit.release_date else 'N/A'})"
             for credit in top_credits
         ]
+
+        photos = self.tmdb.person(most_popular_person.id).images()
+        headshots : List[str] = [p.file_url() for p in photos.profiles]
+
         gender_map = {1: "FEMALE", 2: "MALE"}
         return CelebrityInfo(
             tmdb_id=most_popular_person.id,
             name=most_popular_person.name,
             gender=gender_map.get(most_popular_person.gender, "OTHER"),
-            headshot=most_popular_person.profile_url(),
+            headshots=headshots,
             credits=formatted_credits,
         )
