@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Celebrity Cards - Rotated Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      padding: 0.25in;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0in;
+    }
+
+    .card {
+      width: 2.5in;
+      height: 3.5in;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-content {
+      width: 3.25in;
+      height: 2.25in;
+      padding: 0.125in;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 0.125in;
+
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: top left;
+      position: absolute;
+      top: 0.125in;
+      left: 0.125in;
+    }
+
+    .photo {
+      width: 1.5075in;
+      height: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(100%) brightness(1.1) contrast(1.1);
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-grow: 1;
+    }
+
+    .name {
+      font-size: 14pt;
+      font-weight: bold;
+      margin-bottom: 0.25em;
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .credits {
+      font-size: 9pt;
+      line-height: 1.2;
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  <script>
+    const USE_JS_DATA = true;
+  </script>
+  <script src="cards.js" defer></script>
+</head>
+<body>
+  <div class="page" id="card-container"></div>
+
+  <script>
+    function renderCard(card, container) {
+      const cardHTML = `
+        <div class="card">
+          <div class="card-content">
+            <img class="photo" src="${card.headshot}" alt="${card.name}">
+            <div class="text">
+              <div class="name">${card.name}</div>
+              <div class="credits">${card.credits.join('<br>')}</div>
+            </div>
+          </div>
+        </div>
+      `;
+      container.insertAdjacentHTML('beforeend', cardHTML);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('card-container');
+
+      if (!USE_JS_DATA) {
+        const example = {
+          name: "Tom Hanks",
+          headshot: "https://image.tmdb.org/t/p/original/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+          credits: [
+            "Toy Story (1995)",
+            "The Green Mile (1999)",
+            "Forrest Gump (1994)"
+          ]
+        };
+        for (let i = 0; i < 9; i++) {
+          renderCard(example, container);
+        }
+      } else {
+        if (typeof cardData !== 'undefined') {
+          cardData.forEach((card, index) => {
+            renderCard(card, container);
+            if ((index + 1) % 9 === 0) {
+              const pageBreak = document.createElement('div');
+              pageBreak.className = 'page-break';
+              container.appendChild(pageBreak);
+            }
+          });
+        } else {
+          console.error('cardData is not defined. Ensure cards.js is loaded.');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

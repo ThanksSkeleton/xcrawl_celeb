@@ -1,5 +1,5 @@
-{
-    "31": {
+const cardData = [
+    {
         "tmdb_id": 31,
         "name": "Tom Hanks",
         "gender": "MALE",
@@ -10,7 +10,7 @@
             "Forrest Gump (1994)"
         ]
     },
-    "4165": {
+    {
         "tmdb_id": 4165,
         "name": "John Wayne",
         "gender": "MALE",
@@ -21,7 +21,7 @@
             "The Man Who Shot Liberty Valance (1962)"
         ]
     },
-    "10017": {
+    {
         "tmdb_id": 10017,
         "name": "Charlton Heston",
         "gender": "MALE",
@@ -32,7 +32,7 @@
             "Planet of the Apes (1968)"
         ]
     },
-    "3084": {
+    {
         "tmdb_id": 3084,
         "name": "Marlon Brando",
         "gender": "MALE",
@@ -43,7 +43,7 @@
             "On the Waterfront (1954)"
         ]
     },
-    "8252": {
+    {
         "tmdb_id": 8252,
         "name": "William Holden",
         "gender": "MALE",
@@ -54,7 +54,7 @@
             "The Wild Bunch (1969)"
         ]
     },
-    "3150": {
+    {
         "tmdb_id": 3150,
         "name": "Tony Curtis",
         "gender": "MALE",
@@ -65,7 +65,7 @@
             "The Defiant Ones (1958)"
         ]
     },
-    "3149": {
+    {
         "tmdb_id": 3149,
         "name": "Marilyn Monroe",
         "gender": "FEMALE",
@@ -76,7 +76,7 @@
             "How to Marry a Millionaire (1953)"
         ]
     },
-    "4070": {
+    {
         "tmdb_id": 4070,
         "name": "Grace Kelly",
         "gender": "FEMALE",
@@ -87,7 +87,7 @@
             "Dial M for Murder (1954)"
         ]
     },
-    "1932": {
+    {
         "tmdb_id": 1932,
         "name": "Audrey Hepburn",
         "gender": "FEMALE",
@@ -98,7 +98,7 @@
             "My Fair Lady (1964)"
         ]
     },
-    "3635": {
+    {
         "tmdb_id": 3635,
         "name": "Elizabeth Taylor",
         "gender": "FEMALE",
@@ -109,7 +109,7 @@
             "Giant (1956)"
         ]
     },
-    "8857": {
+    {
         "tmdb_id": 8857,
         "name": "Debbie Reynolds",
         "gender": "FEMALE",
@@ -120,7 +120,7 @@
             "Halloweentown (1998)"
         ]
     },
-    "2749": {
+    {
         "tmdb_id": 2749,
         "name": "James Dean",
         "gender": "MALE",
@@ -131,7 +131,7 @@
             "East of Eden (1955)"
         ]
     },
-    "2094": {
+    {
         "tmdb_id": 2094,
         "name": "Peter Lorre",
         "gender": "MALE",
@@ -142,7 +142,7 @@
             "The Maltese Falcon (1941)"
         ]
     },
-    "109897": {
+    {
         "tmdb_id": 109897,
         "name": "Ethel Merman",
         "gender": "FEMALE",
@@ -153,7 +153,7 @@
             "There's No Business Like Show Business (1954)"
         ]
     },
-    "2753": {
+    {
         "tmdb_id": 2753,
         "name": "Burl Ives",
         "gender": "MALE",
@@ -164,7 +164,7 @@
             "East of Eden (1955)"
         ]
     },
-    "93895": {
+    {
         "tmdb_id": 93895,
         "name": "Tallulah Bankhead",
         "gender": "FEMALE",
@@ -175,7 +175,7 @@
             "A Royal Scandal (1945)"
         ]
     },
-    "738": {
+    {
         "tmdb_id": 738,
         "name": "Sean Connery",
         "gender": "MALE",
@@ -186,7 +186,7 @@
             "The League of Extraordinary Gentlemen (2003)"
         ]
     },
-    "13565": {
+    {
         "tmdb_id": 13565,
         "name": "Steve McQueen",
         "gender": "MALE",
@@ -197,7 +197,7 @@
             "Papillon (1973)"
         ]
     },
-    "3636": {
+    {
         "tmdb_id": 3636,
         "name": "Paul Newman",
         "gender": "MALE",
@@ -208,7 +208,7 @@
             "Butch Cassidy and the Sundance Kid (1969)"
         ]
     },
-    "190": {
+    {
         "tmdb_id": 190,
         "name": "Clint Eastwood",
         "gender": "MALE",
@@ -219,7 +219,7 @@
             "Gran Torino (2008)"
         ]
     },
-    "16897": {
+    {
         "tmdb_id": 16897,
         "name": "Sidney Poitier",
         "gender": "MALE",
@@ -230,7 +230,7 @@
             "In the Heat of the Night (1967)"
         ]
     },
-    "5823": {
+    {
         "tmdb_id": 5823,
         "name": "Julie Andrews",
         "gender": "FEMALE",
@@ -241,7 +241,7 @@
             "Mary Poppins (1965)"
         ]
     },
-    "16757": {
+    {
         "tmdb_id": 16757,
         "name": "Sophia Loren",
         "gender": "FEMALE",
@@ -252,7 +252,7 @@
             "The Life Ahead (2020)"
         ]
     },
-    "21462": {
+    {
         "tmdb_id": 21462,
         "name": "Raquel Welch",
         "gender": "FEMALE",
@@ -263,7 +263,7 @@
             "Fantastic Voyage (1966)"
         ]
     },
-    "2769": {
+    {
         "tmdb_id": 2769,
         "name": "Natalie Wood",
         "gender": "FEMALE",
@@ -274,7 +274,7 @@
             "Rebel Without a Cause (1955)"
         ]
     },
-    "6450": {
+    {
         "tmdb_id": 6450,
         "name": "Faye Dunaway",
         "gender": "FEMALE",
@@ -285,7 +285,7 @@
             "Network (1976)"
         ]
     },
-    "10169": {
+    {
         "tmdb_id": 10169,
         "name": "Telly Savalas",
         "gender": "MALE",
@@ -296,7 +296,7 @@
             "Lisa and the Devil (1976)"
         ]
     },
-    "12446": {
+    {
         "tmdb_id": 12446,
         "name": "Peter Sellers",
         "gender": "MALE",
@@ -307,7 +307,7 @@
             "The Party (1968)"
         ]
     },
-    "522": {
+    {
         "tmdb_id": 522,
         "name": "Rod Steiger",
         "gender": "MALE",
@@ -318,7 +318,7 @@
             "Duck, You Sucker (1972)"
         ]
     },
-    "7301": {
+    {
         "tmdb_id": 7301,
         "name": "Anthony Perkins",
         "gender": "MALE",
@@ -329,7 +329,7 @@
             "Psycho II (1983)"
         ]
     },
-    "10400": {
+    {
         "tmdb_id": 10400,
         "name": "Barbra Streisand",
         "gender": "FEMALE",
@@ -340,7 +340,7 @@
             "The Way We Were (1973)"
         ]
     },
-    "4135": {
+    {
         "tmdb_id": 4135,
         "name": "Robert Redford",
         "gender": "MALE",
@@ -351,7 +351,7 @@
             "All Is Lost (2013)"
         ]
     },
-    "1158": {
+    {
         "tmdb_id": 1158,
         "name": "Al Pacino",
         "gender": "MALE",
@@ -362,7 +362,7 @@
             "Scarface (1983)"
         ]
     },
-    "514": {
+    {
         "tmdb_id": 514,
         "name": "Jack Nicholson",
         "gender": "MALE",
@@ -373,7 +373,7 @@
             "Mars Attacks! (1996)"
         ]
     },
-    "16475": {
+    {
         "tmdb_id": 16475,
         "name": "Burt Reynolds",
         "gender": "MALE",
@@ -384,7 +384,7 @@
             "All Dogs Go to Heaven (1989)"
         ]
     },
-    "16483": {
+    {
         "tmdb_id": 16483,
         "name": "Sylvester Stallone",
         "gender": "MALE",
@@ -395,7 +395,7 @@
             "The Expendables 2 (2012)"
         ]
     },
-    "3092": {
+    {
         "tmdb_id": 3092,
         "name": "Diane Keaton",
         "gender": "FEMALE",
@@ -406,7 +406,7 @@
             "The Godfather Part III (1990)"
         ]
     },
-    "6352": {
+    {
         "tmdb_id": 6352,
         "name": "Jane Fonda",
         "gender": "FEMALE",
@@ -417,7 +417,7 @@
             "Barbarella (1968)"
         ]
     },
-    "35": {
+    {
         "tmdb_id": 35,
         "name": "Sally Field",
         "gender": "FEMALE",
@@ -428,7 +428,7 @@
             "Mrs. Doubtfire (1993)"
         ]
     },
-    "18892": {
+    {
         "tmdb_id": 18892,
         "name": "Goldie Hawn",
         "gender": "FEMALE",
@@ -439,7 +439,7 @@
             "Overboard (1987)"
         ]
     },
-    "55636": {
+    {
         "tmdb_id": 55636,
         "name": "Donald Sutherland",
         "gender": "MALE",
@@ -450,7 +450,7 @@
             "The Hunger Games (2012)"
         ]
     },
-    "3460": {
+    {
         "tmdb_id": 3460,
         "name": "Gene Wilder",
         "gender": "MALE",
@@ -461,7 +461,7 @@
             "Blazing Saddles (1974)"
         ]
     },
-    "4785": {
+    {
         "tmdb_id": 4785,
         "name": "Jeff Goldblum",
         "gender": "MALE",
@@ -472,7 +472,7 @@
             "The Lost World: Jurassic Park (1997)"
         ]
     },
-    "518": {
+    {
         "tmdb_id": 518,
         "name": "Danny DeVito",
         "gender": "MALE",
@@ -483,7 +483,7 @@
             "Batman Returns (1992)"
         ]
     },
-    "1037": {
+    {
         "tmdb_id": 1037,
         "name": "Harvey Keitel",
         "gender": "MALE",
@@ -494,7 +494,7 @@
             "Reservoir Dogs (1992)"
         ]
     },
-    "1100": {
+    {
         "tmdb_id": 1100,
         "name": "Arnold Schwarzenegger",
         "gender": "MALE",
@@ -505,7 +505,7 @@
             "Predator (1987)"
         ]
     },
-    "3": {
+    {
         "tmdb_id": 3,
         "name": "Harrison Ford",
         "gender": "MALE",
@@ -516,7 +516,7 @@
             "Raiders of the Lost Ark (1981)"
         ]
     },
-    "500": {
+    {
         "tmdb_id": 500,
         "name": "Tom Cruise",
         "gender": "MALE",
@@ -527,7 +527,7 @@
             "Oblivion (2013)"
         ]
     },
-    "2461": {
+    {
         "tmdb_id": 2461,
         "name": "Mel Gibson",
         "gender": "MALE",
@@ -538,7 +538,7 @@
             "Signs (2002)"
         ]
     },
-    "776": {
+    {
         "tmdb_id": 776,
         "name": "Eddie Murphy",
         "gender": "MALE",
@@ -549,7 +549,7 @@
             "Mulan (1998)"
         ]
     },
-    "10205": {
+    {
         "tmdb_id": 10205,
         "name": "Sigourney Weaver",
         "gender": "FEMALE",
@@ -560,7 +560,7 @@
             "Aliens (1986)"
         ]
     },
-    "21625": {
+    {
         "tmdb_id": 21625,
         "name": "Molly Ringwald",
         "gender": "FEMALE",
@@ -571,7 +571,7 @@
             "Sixteen Candles (1984)"
         ]
     },
-    "1160": {
+    {
         "tmdb_id": 1160,
         "name": "Michelle Pfeiffer",
         "gender": "FEMALE",
@@ -582,7 +582,7 @@
             "Dark Shadows (2012)"
         ]
     },
-    "589": {
+    {
         "tmdb_id": 589,
         "name": "Daryl Hannah",
         "gender": "FEMALE",
@@ -593,7 +593,7 @@
             "Kill Bill: Vol. 2 (2004)"
         ]
     },
-    "3391": {
+    {
         "tmdb_id": 3391,
         "name": "Kathleen Turner",
         "gender": "FEMALE",
@@ -604,7 +604,7 @@
             "Marley & Me (2008)"
         ]
     },
-    "1062": {
+    {
         "tmdb_id": 1062,
         "name": "Christopher Lloyd",
         "gender": "MALE",
@@ -615,7 +615,7 @@
             "Back to the Future Part III (1990)"
         ]
     },
-    "2047": {
+    {
         "tmdb_id": 2047,
         "name": "Danny Glover",
         "gender": "MALE",
@@ -626,7 +626,7 @@
             "Predator 2 (1990)"
         ]
     },
-    "2395": {
+    {
         "tmdb_id": 2395,
         "name": "Whoopi Goldberg",
         "gender": "FEMALE",
@@ -637,7 +637,7 @@
             "Sister Act (1992)"
         ]
     },
-    "95024": {
+    {
         "tmdb_id": 95024,
         "name": "Bobcat Goldthwait",
         "gender": "MALE",
@@ -648,7 +648,7 @@
             "Scrooged (1988)"
         ]
     },
-    "7073": {
+    {
         "tmdb_id": 7073,
         "name": "Michael Berryman",
         "gender": "MALE",
@@ -659,7 +659,7 @@
             "The Hills Have Eyes Part 2 (1985)"
         ]
     },
-    "2888": {
+    {
         "tmdb_id": 2888,
         "name": "Will Smith",
         "gender": "MALE",
@@ -670,7 +670,7 @@
             "Suicide Squad (2016)"
         ]
     },
-    "6384": {
+    {
         "tmdb_id": 6384,
         "name": "Keanu Reeves",
         "gender": "MALE",
@@ -681,7 +681,7 @@
             "John Wick (2014)"
         ]
     },
-    "287": {
+    {
         "tmdb_id": 287,
         "name": "Brad Pitt",
         "gender": "MALE",
@@ -692,7 +692,7 @@
             "Inglourious Basterds (2009)"
         ]
     },
-    "2963": {
+    {
         "tmdb_id": 2963,
         "name": "Nicolas Cage",
         "gender": "MALE",
@@ -703,7 +703,7 @@
             "National Treasure (2004)"
         ]
     },
-    "1204": {
+    {
         "tmdb_id": 1204,
         "name": "Julia Roberts",
         "gender": "FEMALE",
@@ -714,7 +714,7 @@
             "Wonder (2017)"
         ]
     },
-    "18277": {
+    {
         "tmdb_id": 18277,
         "name": "Sandra Bullock",
         "gender": "FEMALE",
@@ -725,7 +725,7 @@
             "Minions (2015)"
         ]
     },
-    "1920": {
+    {
         "tmdb_id": 1920,
         "name": "Winona Ryder",
         "gender": "FEMALE",
@@ -736,7 +736,7 @@
             "Girl, Interrupted (1999)"
         ]
     },
-    "6941": {
+    {
         "tmdb_id": 6941,
         "name": "Cameron Diaz",
         "gender": "FEMALE",
@@ -747,7 +747,7 @@
             "There's Something About Mary (1998)"
         ]
     },
-    "3416": {
+    {
         "tmdb_id": 3416,
         "name": "Demi Moore",
         "gender": "FEMALE",
@@ -758,7 +758,7 @@
             "The Hunchback of Notre Dame (1996)"
         ]
     },
-    "884": {
+    {
         "tmdb_id": 884,
         "name": "Steve Buscemi",
         "gender": "MALE",
@@ -769,7 +769,7 @@
             "The Boss Baby (2017)"
         ]
     },
-    "64": {
+    {
         "tmdb_id": 64,
         "name": "Gary Oldman",
         "gender": "MALE",
@@ -780,7 +780,7 @@
             "Bram Stoker's Dracula (1992)"
         ]
     },
-    "66": {
+    {
         "tmdb_id": 66,
         "name": "Chris Tucker",
         "gender": "MALE",
@@ -791,7 +791,7 @@
             "Rush Hour 2 (2001)"
         ]
     },
-    "11160": {
+    {
         "tmdb_id": 11160,
         "name": "Danny Trejo",
         "gender": "MALE",
@@ -802,7 +802,7 @@
             "Machete Kills (2013)"
         ]
     },
-    "6949": {
+    {
         "tmdb_id": 6949,
         "name": "John Malkovich",
         "gender": "MALE",
@@ -813,7 +813,7 @@
             "Being John Malkovich (1999)"
         ]
     },
-    "2219": {
+    {
         "tmdb_id": 2219,
         "name": "Tobey Maguire",
         "gender": "MALE",
@@ -824,7 +824,7 @@
             "Spider-Man 2 (2004)"
         ]
     },
-    "1892": {
+    {
         "tmdb_id": 1892,
         "name": "Matt Damon",
         "gender": "MALE",
@@ -835,7 +835,7 @@
             "The Bourne Identity (2002)"
         ]
     },
-    "3894": {
+    {
         "tmdb_id": 3894,
         "name": "Christian Bale",
         "gender": "MALE",
@@ -846,7 +846,7 @@
             "Batman Begins (2005)"
         ]
     },
-    "6968": {
+    {
         "tmdb_id": 6968,
         "name": "Hugh Jackman",
         "gender": "MALE",
@@ -857,7 +857,7 @@
             "X-Men: Days of Future Past (2014)"
         ]
     },
-    "114": {
+    {
         "tmdb_id": 114,
         "name": "Orlando Bloom",
         "gender": "MALE",
@@ -868,7 +868,7 @@
             "Troy (2004)"
         ]
     },
-    "11701": {
+    {
         "tmdb_id": 11701,
         "name": "Angelina Jolie",
         "gender": "FEMALE",
@@ -879,7 +879,7 @@
             "Lara Croft: Tomb Raider (2001)"
         ]
     },
-    "524": {
+    {
         "tmdb_id": 524,
         "name": "Natalie Portman",
         "gender": "FEMALE",
@@ -890,7 +890,7 @@
             "V for Vendetta (2006)"
         ]
     },
-    "116": {
+    {
         "tmdb_id": 116,
         "name": "Keira Knightley",
         "gender": "FEMALE",
@@ -901,7 +901,7 @@
             "The Imitation Game (2014)"
         ]
     },
-    "1245": {
+    {
         "tmdb_id": 1245,
         "name": "Scarlett Johansson",
         "gender": "FEMALE",
@@ -912,7 +912,7 @@
             "Ghost in the Shell (2017)"
         ]
     },
-    "56731": {
+    {
         "tmdb_id": 56731,
         "name": "Jessica Alba",
         "gender": "FEMALE",
@@ -923,7 +923,7 @@
             "Sin City (2005)"
         ]
     },
-    "1333": {
+    {
         "tmdb_id": 1333,
         "name": "Andy Serkis",
         "gender": "MALE",
@@ -934,7 +934,7 @@
             "War for the Planet of the Apes (2017)"
         ]
     },
-    "39995": {
+    {
         "tmdb_id": 39995,
         "name": "Michael Cera",
         "gender": "MALE",
@@ -945,7 +945,7 @@
             "Juno (2007)"
         ]
     },
-    "58225": {
+    {
         "tmdb_id": 58225,
         "name": "Zach Galifianakis",
         "gender": "MALE",
@@ -956,7 +956,7 @@
             "Birdman or (The Unexpected Virtue of Ignorance) (2014)"
         ]
     },
-    "3063": {
+    {
         "tmdb_id": 3063,
         "name": "Tilda Swinton",
         "gender": "FEMALE",
@@ -967,7 +967,7 @@
             "Only Lovers Left Alive (2014)"
         ]
     },
-    "4495": {
+    {
         "tmdb_id": 4495,
         "name": "Steve Carell",
         "gender": "MALE",
@@ -978,7 +978,7 @@
             "The Big Short (2015)"
         ]
     },
-    "74568": {
+    {
         "tmdb_id": 74568,
         "name": "Chris Hemsworth",
         "gender": "MALE",
@@ -989,7 +989,7 @@
             "Thor: The Dark World (2013)"
         ]
     },
-    "135651": {
+    {
         "tmdb_id": 135651,
         "name": "Michael B. Jordan",
         "gender": "MALE",
@@ -1000,7 +1000,7 @@
             "Creed II (2018)"
         ]
     },
-    "30614": {
+    {
         "tmdb_id": 30614,
         "name": "Ryan Gosling",
         "gender": "MALE",
@@ -1011,7 +1011,7 @@
             "Drive (2011)"
         ]
     },
-    "25072": {
+    {
         "tmdb_id": 25072,
         "name": "Oscar Isaac",
         "gender": "MALE",
@@ -1022,7 +1022,7 @@
             "Ex Machina (2015)"
         ]
     },
-    "1023139": {
+    {
         "tmdb_id": 1023139,
         "name": "Adam Driver",
         "gender": "MALE",
@@ -1033,7 +1033,7 @@
             "Marriage Story (2019)"
         ]
     },
-    "72129": {
+    {
         "tmdb_id": 72129,
         "name": "Jennifer Lawrence",
         "gender": "FEMALE",
@@ -1044,7 +1044,7 @@
             "The Hunger Games: Catching Fire (2013)"
         ]
     },
-    "90633": {
+    {
         "tmdb_id": 90633,
         "name": "Gal Gadot",
         "gender": "FEMALE",
@@ -1055,7 +1055,7 @@
             "Wonder Woman 1984 (2020)"
         ]
     },
-    "60073": {
+    {
         "tmdb_id": 60073,
         "name": "Brie Larson",
         "gender": "FEMALE",
@@ -1066,7 +1066,7 @@
             "Room (2015)"
         ]
     },
-    "234352": {
+    {
         "tmdb_id": 234352,
         "name": "Margot Robbie",
         "gender": "FEMALE",
@@ -1077,7 +1077,7 @@
             "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (2020)"
         ]
     },
-    "1267329": {
+    {
         "tmdb_id": 1267329,
         "name": "Lupita Nyong'o",
         "gender": "FEMALE",
@@ -1088,7 +1088,7 @@
             "Us (2019)"
         ]
     },
-    "71580": {
+    {
         "tmdb_id": 71580,
         "name": "Benedict Cumberbatch",
         "gender": "MALE",
@@ -1099,7 +1099,7 @@
             "Doctor Strange (2016)"
         ]
     },
-    "1625558": {
+    {
         "tmdb_id": 1625558,
         "name": "Awkwafina",
         "gender": "FEMALE",
@@ -1110,7 +1110,7 @@
             "Raya and the Last Dragon (2021)"
         ]
     },
-    "1200864": {
+    {
         "tmdb_id": 1200864,
         "name": "LaKeith Stanfield",
         "gender": "MALE",
@@ -1121,7 +1121,7 @@
             "Death Note (2017)"
         ]
     },
-    "62561": {
+    {
         "tmdb_id": 62561,
         "name": "Tessa Thompson",
         "gender": "FEMALE",
@@ -1132,7 +1132,7 @@
             "Men in Black: International (2019)"
         ]
     },
-    "5293": {
+    {
         "tmdb_id": 5293,
         "name": "Willem Dafoe",
         "gender": "MALE",
@@ -1143,9 +1143,9 @@
             "John Wick (2014)"
         ]
     },
-    "1190668": {
+    {
         "tmdb_id": 1190668,
-        "name": "Timoth\u00e9e Chalamet",
+        "name": "Timothée Chalamet",
         "gender": "MALE",
         "headshot": "https://image.tmdb.org/t/p/original/BE2sdjpgsa2rNTFa66f7upkaOP.jpg",
         "credits": [
@@ -1154,7 +1154,7 @@
             "Call Me by Your Name (2017)"
         ]
     },
-    "1253360": {
+    {
         "tmdb_id": 1253360,
         "name": "Pedro Pascal",
         "gender": "MALE",
@@ -1165,7 +1165,7 @@
             "The Equalizer 2 (2018)"
         ]
     },
-    "2326151": {
+    {
         "tmdb_id": 2326151,
         "name": "Paul Mescal",
         "gender": "MALE",
@@ -1176,7 +1176,7 @@
             "Normal People (N/A)"
         ]
     },
-    "86654": {
+    {
         "tmdb_id": 86654,
         "name": "Austin Butler",
         "gender": "MALE",
@@ -1187,7 +1187,7 @@
             "Elvis (2022)"
         ]
     },
-    "1674162": {
+    {
         "tmdb_id": 1674162,
         "name": "Jonathan Majors",
         "gender": "MALE",
@@ -1198,7 +1198,7 @@
             "The Harder They Fall (2021)"
         ]
     },
-    "1136406": {
+    {
         "tmdb_id": 1136406,
         "name": "Tom Holland",
         "gender": "MALE",
@@ -1209,7 +1209,7 @@
             "Spider-Man: Far From Home (2019)"
         ]
     },
-    "2034418": {
+    {
         "tmdb_id": 2034418,
         "name": "Jacob Elordi",
         "gender": "MALE",
@@ -1220,7 +1220,7 @@
             "The Kissing Booth 2 (2020)"
         ]
     },
-    "1290466": {
+    {
         "tmdb_id": 1290466,
         "name": "Barry Keoghan",
         "gender": "MALE",
@@ -1231,7 +1231,7 @@
             "The Killing of a Sacred Deer (2017)"
         ]
     },
-    "3232669": {
+    {
         "tmdb_id": 3232669,
         "name": "Jude Hill",
         "gender": "MALE",
@@ -1242,7 +1242,7 @@
             "Belfast (2021)"
         ]
     },
-    "206905": {
+    {
         "tmdb_id": 206905,
         "name": "Jeremy Allen White",
         "gender": "MALE",
@@ -1253,7 +1253,7 @@
             "The Iron Claw (2023)"
         ]
     },
-    "1373737": {
+    {
         "tmdb_id": 1373737,
         "name": "Florence Pugh",
         "gender": "FEMALE",
@@ -1264,7 +1264,7 @@
             "Don't Worry Darling (2022)"
         ]
     },
-    "1397778": {
+    {
         "tmdb_id": 1397778,
         "name": "Anya Taylor-Joy",
         "gender": "FEMALE",
@@ -1275,7 +1275,7 @@
             "The Witch (2016)"
         ]
     },
-    "505710": {
+    {
         "tmdb_id": 505710,
         "name": "Zendaya",
         "gender": "FEMALE",
@@ -1286,7 +1286,7 @@
             "Spider-Man: No Way Home (2021)"
         ]
     },
-    "2217977": {
+    {
         "tmdb_id": 2217977,
         "name": "Rachel Zegler",
         "gender": "FEMALE",
@@ -1297,7 +1297,7 @@
             "West Side Story (2021)"
         ]
     },
-    "36592": {
+    {
         "tmdb_id": 36592,
         "name": "Saoirse Ronan",
         "gender": "FEMALE",
@@ -1308,7 +1308,7 @@
             "Lady Bird (2017)"
         ]
     },
-    "2201315": {
+    {
         "tmdb_id": 2201315,
         "name": "Emma Mackey",
         "gender": "FEMALE",
@@ -1319,7 +1319,7 @@
             "Death on the Nile (2022)"
         ]
     },
-    "130640": {
+    {
         "tmdb_id": 130640,
         "name": "Hailee Steinfeld",
         "gender": "FEMALE",
@@ -1330,7 +1330,7 @@
             "The Edge of Seventeen (2016)"
         ]
     },
-    "115440": {
+    {
         "tmdb_id": 115440,
         "name": "Sydney Sweeney",
         "gender": "FEMALE",
@@ -1341,7 +1341,7 @@
             "Immaculate (2024)"
         ]
     },
-    "974169": {
+    {
         "tmdb_id": 974169,
         "name": "Jenna Ortega",
         "gender": "FEMALE",
@@ -1352,7 +1352,7 @@
             "X (2022)"
         ]
     },
-    "1459885": {
+    {
         "tmdb_id": 1459885,
         "name": "Lily-Rose Depp",
         "gender": "FEMALE",
@@ -1363,7 +1363,7 @@
             "Voyagers (2021)"
         ]
     },
-    "17142": {
+    {
         "tmdb_id": 17142,
         "name": "Paul Dano",
         "gender": "MALE",
@@ -1374,7 +1374,7 @@
             "Swiss Army Man (2016)"
         ]
     },
-    "2195140": {
+    {
         "tmdb_id": 2195140,
         "name": "Ayo Edebiri",
         "gender": "FEMALE",
@@ -1385,7 +1385,7 @@
             "Bottoms (2023)"
         ]
     },
-    "1668004": {
+    {
         "tmdb_id": 1668004,
         "name": "Bella Ramsey",
         "gender": "OTHER",
@@ -1396,7 +1396,7 @@
             "Chicken Run: Dawn of the Nugget (2023)"
         ]
     },
-    "1467219": {
+    {
         "tmdb_id": 1467219,
         "name": "Joe Keery",
         "gender": "MALE",
@@ -1407,7 +1407,7 @@
             "Spree (2020)"
         ]
     },
-    "2174509": {
+    {
         "tmdb_id": 2174509,
         "name": "Mason Gooding",
         "gender": "MALE",
@@ -1418,7 +1418,7 @@
             "Scream (2022)"
         ]
     },
-    "569": {
+    {
         "tmdb_id": 569,
         "name": "Ethan Hawke",
         "gender": "MALE",
@@ -1429,7 +1429,7 @@
             "The Purge (2013)"
         ]
     },
-    "1137824": {
+    {
         "tmdb_id": 1137824,
         "name": "Mia Goth",
         "gender": "FEMALE",
@@ -1440,7 +1440,7 @@
             "A Cure for Wellness (2017)"
         ]
     },
-    "83854": {
+    {
         "tmdb_id": 83854,
         "name": "David Dastmalchian",
         "gender": "MALE",
@@ -1451,7 +1451,7 @@
             "Ant-Man (2015)"
         ]
     },
-    "1382987": {
+    {
         "tmdb_id": 1382987,
         "name": "Ramy Youssef",
         "gender": "MALE",
@@ -1462,7 +1462,7 @@
             "Why Him? (2016)"
         ]
     },
-    "8944": {
+    {
         "tmdb_id": 8944,
         "name": "Jamie Lee Curtis",
         "gender": "FEMALE",
@@ -1473,7 +1473,7 @@
             "Halloween (2018)"
         ]
     },
-    "1905": {
+    {
         "tmdb_id": 1905,
         "name": "Vincent Price",
         "gender": "MALE",
@@ -1484,7 +1484,7 @@
             "Vincent (1982)"
         ]
     },
-    "19384": {
+    {
         "tmdb_id": 19384,
         "name": "Tony Todd",
         "gender": "MALE",
@@ -1495,7 +1495,7 @@
             "Candyman (1992)"
         ]
     },
-    "37366": {
+    {
         "tmdb_id": 37366,
         "name": "Linda Blair",
         "gender": "FEMALE",
@@ -1506,7 +1506,7 @@
             "Repossessed (1990)"
         ]
     },
-    "17005": {
+    {
         "tmdb_id": 17005,
         "name": "Doug Jones",
         "gender": "MALE",
@@ -1517,7 +1517,7 @@
             "Hellboy (2004)"
         ]
     },
-    "1103": {
+    {
         "tmdb_id": 1103,
         "name": "Bill Duke",
         "gender": "MALE",
@@ -1528,7 +1528,7 @@
             "X-Men: The Last Stand (2006)"
         ]
     },
-    "11086": {
+    {
         "tmdb_id": 11086,
         "name": "Michael Ironside",
         "gender": "MALE",
@@ -1539,7 +1539,7 @@
             "Total Recall (1990)"
         ]
     },
-    "1104": {
+    {
         "tmdb_id": 1104,
         "name": "Jesse Ventura",
         "gender": "MALE",
@@ -1550,7 +1550,7 @@
             "The Running Man (1987)"
         ]
     },
-    "591": {
+    {
         "tmdb_id": 591,
         "name": "Brion James",
         "gender": "MALE",
@@ -1561,7 +1561,7 @@
             "Tango & Cash (1989)"
         ]
     },
-    "1737": {
+    {
         "tmdb_id": 1737,
         "name": "David Patrick Kelly",
         "gender": "MALE",
@@ -1572,7 +1572,7 @@
             "The Warriors (1979)"
         ]
     },
-    "11784": {
+    {
         "tmdb_id": 11784,
         "name": "Tom Atkins",
         "gender": "MALE",
@@ -1583,7 +1583,7 @@
             "Maniac Cop (1988)"
         ]
     },
-    "61704": {
+    {
         "tmdb_id": 61704,
         "name": "Al Leong",
         "gender": "MALE",
@@ -1594,7 +1594,7 @@
             "Bill & Ted's Excellent Adventure (1989)"
         ]
     },
-    "7675": {
+    {
         "tmdb_id": 7675,
         "name": "Paul Gleason",
         "gender": "MALE",
@@ -1605,7 +1605,7 @@
             "Trading Places (1983)"
         ]
     },
-    "6573": {
+    {
         "tmdb_id": 6573,
         "name": "William Sadler",
         "gender": "MALE",
@@ -1616,7 +1616,7 @@
             "Die Hard 2 (1990)"
         ]
     },
-    "51581": {
+    {
         "tmdb_id": 51581,
         "name": "Clarence Gilyard Jr.",
         "gender": "MALE",
@@ -1627,7 +1627,7 @@
             "Die Hard (1988)"
         ]
     },
-    "48": {
+    {
         "tmdb_id": 48,
         "name": "Sean Bean",
         "gender": "MALE",
@@ -1638,7 +1638,7 @@
             "The Martian (2015)"
         ]
     },
-    "2048": {
+    {
         "tmdb_id": 2048,
         "name": "Gary Busey",
         "gender": "MALE",
@@ -1649,7 +1649,7 @@
             "Point Break (1991)"
         ]
     },
-    "5049": {
+    {
         "tmdb_id": 5049,
         "name": "John Hurt",
         "gender": "MALE",
@@ -1660,7 +1660,7 @@
             "V for Vendetta (2006)"
         ]
     },
-    "2712": {
+    {
         "tmdb_id": 2712,
         "name": "Michael Biehn",
         "gender": "MALE",
@@ -1671,7 +1671,7 @@
             "The Abyss (1989)"
         ]
     },
-    "13022": {
+    {
         "tmdb_id": 13022,
         "name": "Tom Berenger",
         "gender": "MALE",
@@ -1682,7 +1682,7 @@
             "Training Day (2001)"
         ]
     },
-    "8655": {
+    {
         "tmdb_id": 8655,
         "name": "R. Lee Ermey",
         "gender": "MALE",
@@ -1693,9 +1693,9 @@
             "Full Metal Jacket (1987)"
         ]
     },
-    "10698": {
+    {
         "tmdb_id": 10698,
-        "name": "Tch\u00e9ky Karyo",
+        "name": "Tchéky Karyo",
         "gender": "MALE",
         "headshot": "https://image.tmdb.org/t/p/original/jrtGiLYaALwDZgF39Hlgb8O1XZ1.jpg",
         "credits": [
@@ -1704,7 +1704,7 @@
             "La Femme Nikita (1991)"
         ]
     },
-    "11477": {
+    {
         "tmdb_id": 11477,
         "name": "Ray Liotta",
         "gender": "MALE",
@@ -1715,7 +1715,7 @@
             "Identity (2003)"
         ]
     },
-    "2778": {
+    {
         "tmdb_id": 2778,
         "name": "Dennis Hopper",
         "gender": "MALE",
@@ -1726,7 +1726,7 @@
             "Blue Velvet (1986)"
         ]
     },
-    "1283": {
+    {
         "tmdb_id": 1283,
         "name": "Helena Bonham Carter",
         "gender": "FEMALE",
@@ -1737,7 +1737,7 @@
             "Corpse Bride (2005)"
         ]
     },
-    "4690": {
+    {
         "tmdb_id": 4690,
         "name": "Christopher Walken",
         "gender": "MALE",
@@ -1748,7 +1748,7 @@
             "Click (2006)"
         ]
     },
-    "4517": {
+    {
         "tmdb_id": 4517,
         "name": "Joe Pesci",
         "gender": "MALE",
@@ -1759,7 +1759,7 @@
             "Home Alone (1990)"
         ]
     },
-    "82191": {
+    {
         "tmdb_id": 82191,
         "name": "Sharlto Copley",
         "gender": "MALE",
@@ -1770,7 +1770,7 @@
             "District 9 (2009)"
         ]
     },
-    "10431": {
+    {
         "tmdb_id": 10431,
         "name": "Jennifer Jason Leigh",
         "gender": "FEMALE",
@@ -1781,7 +1781,7 @@
             "The Hateful Eight (2015)"
         ]
     },
-    "6807": {
+    {
         "tmdb_id": 6807,
         "name": "Sam Rockwell",
         "gender": "MALE",
@@ -1792,7 +1792,7 @@
             "Moon (2009)"
         ]
     },
-    "1064": {
+    {
         "tmdb_id": 1064,
         "name": "Crispin Glover",
         "gender": "MALE",
@@ -1803,7 +1803,7 @@
             "9 (2009)"
         ]
     },
-    "7499": {
+    {
         "tmdb_id": 7499,
         "name": "Jared Leto",
         "gender": "MALE",
@@ -1814,7 +1814,7 @@
             "Mr. Nobody (2013)"
         ]
     },
-    "16850": {
+    {
         "tmdb_id": 16850,
         "name": "Rose McGowan",
         "gender": "FEMALE",
@@ -1825,7 +1825,7 @@
             "Grindhouse (2007)"
         ]
     },
-    "12074": {
+    {
         "tmdb_id": 12074,
         "name": "John Lithgow",
         "gender": "MALE",
@@ -1836,7 +1836,7 @@
             "Rise of the Planet of the Apes (2011)"
         ]
     },
-    "10912": {
+    {
         "tmdb_id": 10912,
         "name": "Eva Green",
         "gender": "FEMALE",
@@ -1847,7 +1847,7 @@
             "300: Rise of an Empire (2014)"
         ]
     },
-    "4512": {
+    {
         "tmdb_id": 4512,
         "name": "James Woods",
         "gender": "MALE",
@@ -1858,7 +1858,7 @@
             "Videodrome (1983)"
         ]
     },
-    "27763": {
+    {
         "tmdb_id": 27763,
         "name": "Casper Van Dien",
         "gender": "MALE",
@@ -1869,7 +1869,7 @@
             "Starship Troopers 3: Marauder (2008)"
         ]
     },
-    "2133": {
+    {
         "tmdb_id": 2133,
         "name": "Dina Meyer",
         "gender": "FEMALE",
@@ -1880,7 +1880,7 @@
             "Saw III (2006)"
         ]
     },
-    "9205": {
+    {
         "tmdb_id": 9205,
         "name": "Denise Richards",
         "gender": "FEMALE",
@@ -1891,7 +1891,7 @@
             "Valentine (2001)"
         ]
     },
-    "41686": {
+    {
         "tmdb_id": 41686,
         "name": "Neil Patrick Harris",
         "gender": "MALE",
@@ -1902,7 +1902,7 @@
             "The Smurfs (2011)"
         ]
     },
-    "28410": {
+    {
         "tmdb_id": 28410,
         "name": "Jake Busey",
         "gender": "MALE",
@@ -1913,7 +1913,7 @@
             "Enemy of the State (1998)"
         ]
     },
-    "41687": {
+    {
         "tmdb_id": 41687,
         "name": "Patrick Muldoon",
         "gender": "MALE",
@@ -1924,7 +1924,7 @@
             "Vanquish (2021)"
         ]
     },
-    "27972": {
+    {
         "tmdb_id": 27972,
         "name": "Josh Hutcherson",
         "gender": "MALE",
@@ -1935,7 +1935,7 @@
             "The Hunger Games (2012)"
         ]
     },
-    "2283": {
+    {
         "tmdb_id": 2283,
         "name": "Stanley Tucci",
         "gender": "MALE",
@@ -1946,7 +1946,7 @@
             "Transformers: Age of Extinction (2014)"
         ]
     },
-    "9281": {
+    {
         "tmdb_id": 9281,
         "name": "Elizabeth Banks",
         "gender": "FEMALE",
@@ -1957,7 +1957,7 @@
             "The Lego Movie (2014)"
         ]
     },
-    "8210": {
+    {
         "tmdb_id": 8210,
         "name": "Wes Bentley",
         "gender": "MALE",
@@ -1968,7 +1968,7 @@
             "American Beauty (1999)"
         ]
     },
-    "23498": {
+    {
         "tmdb_id": 23498,
         "name": "Alexander Ludwig",
         "gender": "MALE",
@@ -1979,7 +1979,7 @@
             "The Hunger Games (2012)"
         ]
     },
-    "5050": {
+    {
         "tmdb_id": 5050,
         "name": "Yaphet Kotto",
         "gender": "MALE",
@@ -1990,7 +1990,7 @@
             "Live and Let Die (1973)"
         ]
     },
-    "10460": {
+    {
         "tmdb_id": 10460,
         "name": "Richard Kiel",
         "gender": "MALE",
@@ -2001,7 +2001,7 @@
             "Moonraker (1979)"
         ]
     },
-    "13006": {
+    {
         "tmdb_id": 13006,
         "name": "Professor Toru Tanaka",
         "gender": "MALE",
@@ -2012,7 +2012,7 @@
             "Darkman (1990)"
         ]
     },
-    "21411": {
+    {
         "tmdb_id": 21411,
         "name": "Ice-T",
         "gender": "MALE",
@@ -2023,7 +2023,7 @@
             "New Jack City (1991)"
         ]
     },
-    "585": {
+    {
         "tmdb_id": 585,
         "name": "Rutger Hauer",
         "gender": "MALE",
@@ -2034,7 +2034,7 @@
             "Sin City (2005)"
         ]
     },
-    "976": {
+    {
         "tmdb_id": 976,
         "name": "Jason Statham",
         "gender": "MALE",
@@ -2045,7 +2045,7 @@
             "The Transporter (2002)"
         ]
     },
-    "11148": {
+    {
         "tmdb_id": 11148,
         "name": "Joan Allen",
         "gender": "FEMALE",
@@ -2056,7 +2056,7 @@
             "Room (2015)"
         ]
     },
-    "8169": {
+    {
         "tmdb_id": 8169,
         "name": "Tyrese Gibson",
         "gender": "MALE",
@@ -2067,7 +2067,7 @@
             "2 Fast 2 Furious (2003)"
         ]
     },
-    "141": {
+    {
         "tmdb_id": 141,
         "name": "David Carradine",
         "gender": "MALE",
@@ -2078,7 +2078,7 @@
             "Crank: High Voltage (2009)"
         ]
     },
-    "2176": {
+    {
         "tmdb_id": 2176,
         "name": "Tommy Lee Jones",
         "gender": "MALE",
@@ -2089,7 +2089,7 @@
             "Men in Black II (2002)"
         ]
     },
-    "819": {
+    {
         "tmdb_id": 819,
         "name": "Edward Norton",
         "gender": "MALE",
@@ -2100,7 +2100,7 @@
             "American History X (1998)"
         ]
     },
-    "2713": {
+    {
         "tmdb_id": 2713,
         "name": "Linda Hamilton",
         "gender": "FEMALE",
@@ -2111,7 +2111,7 @@
             "Terminator: Dark Fate (2019)"
         ]
     },
-    "18999": {
+    {
         "tmdb_id": 18999,
         "name": "J.K. Simmons",
         "gender": "MALE",
@@ -2122,7 +2122,7 @@
             "Whiplash (2014)"
         ]
     },
-    "19": {
+    {
         "tmdb_id": 19,
         "name": "Allison Janney",
         "gender": "FEMALE",
@@ -2133,7 +2133,7 @@
             "I, Tonya (2017)"
         ]
     },
-    "129101": {
+    {
         "tmdb_id": 129101,
         "name": "Lance Reddick",
         "gender": "MALE",
@@ -2144,7 +2144,7 @@
             "John Wick: Chapter 3 - Parabellum (2019)"
         ]
     },
-    "3810": {
+    {
         "tmdb_id": 3810,
         "name": "Javier Bardem",
         "gender": "MALE",
@@ -2155,7 +2155,7 @@
             "Skyfall (2012)"
         ]
     },
-    "10882": {
+    {
         "tmdb_id": 10882,
         "name": "Rosamund Pike",
         "gender": "FEMALE",
@@ -2166,7 +2166,7 @@
             "I Care a Lot (2021)"
         ]
     },
-    "335": {
+    {
         "tmdb_id": 335,
         "name": "Michael Shannon",
         "gender": "MALE",
@@ -2177,7 +2177,7 @@
             "Nocturnal Animals (2016)"
         ]
     },
-    "537": {
+    {
         "tmdb_id": 537,
         "name": "Stephen Tobolowsky",
         "gender": "MALE",
@@ -2188,7 +2188,7 @@
             "Groundhog Day (1993)"
         ]
     },
-    "20750": {
+    {
         "tmdb_id": 20750,
         "name": "Judy Greer",
         "gender": "FEMALE",
@@ -2199,7 +2199,7 @@
             "Halloween (2018)"
         ]
     },
-    "6574": {
+    {
         "tmdb_id": 6574,
         "name": "Clancy Brown",
         "gender": "MALE",
@@ -2210,7 +2210,7 @@
             "The SpongeBob SquarePants Movie (2004)"
         ]
     },
-    "18918": {
+    {
         "tmdb_id": 18918,
         "name": "Dwayne Johnson",
         "gender": "MALE",
@@ -2221,7 +2221,7 @@
             "San Andreas (2015)"
         ]
     },
-    "119592": {
+    {
         "tmdb_id": 119592,
         "name": "Aubrey Plaza",
         "gender": "FEMALE",
@@ -2232,7 +2232,7 @@
             "The To Do List (2013)"
         ]
     },
-    "38673": {
+    {
         "tmdb_id": 38673,
         "name": "Channing Tatum",
         "gender": "MALE",
@@ -2243,7 +2243,7 @@
             "White House Down (2013)"
         ]
     },
-    "1772": {
+    {
         "tmdb_id": 1772,
         "name": "Anna Faris",
         "gender": "FEMALE",
@@ -2254,7 +2254,7 @@
             "Scary Movie 3 (2003)"
         ]
     },
-    "29222": {
+    {
         "tmdb_id": 29222,
         "name": "Zac Efron",
         "gender": "MALE",
@@ -2265,7 +2265,7 @@
             "High School Musical (2006)"
         ]
     },
-    "206": {
+    {
         "tmdb_id": 206,
         "name": "Jim Carrey",
         "gender": "MALE",
@@ -2276,7 +2276,7 @@
             "Bruce Almighty (2003)"
         ]
     },
-    "1240487": {
+    {
         "tmdb_id": 1240487,
         "name": "Kate McKinnon",
         "gender": "FEMALE",
@@ -2287,7 +2287,7 @@
             "Ghostbusters (2016)"
         ]
     },
-    "4173": {
+    {
         "tmdb_id": 4173,
         "name": "Anthony Hopkins",
         "gender": "MALE",
@@ -2298,7 +2298,7 @@
             "Hannibal (2001)"
         ]
     },
-    "515": {
+    {
         "tmdb_id": 515,
         "name": "Glenn Close",
         "gender": "FEMALE",
@@ -2309,7 +2309,7 @@
             "Mars Attacks! (1996)"
         ]
     },
-    "70851": {
+    {
         "tmdb_id": 70851,
         "name": "Jack Black",
         "gender": "MALE",
@@ -2320,7 +2320,7 @@
             "Kung Fu Panda 2 (2011)"
         ]
     },
-    "8318": {
+    {
         "tmdb_id": 8318,
         "name": "Brian Blessed",
         "gender": "MALE",
@@ -2331,7 +2331,7 @@
             "Robin Hood: Prince of Thieves (1991)"
         ]
     },
-    "3380": {
+    {
         "tmdb_id": 3380,
         "name": "Bette Davis",
         "gender": "FEMALE",
@@ -2342,7 +2342,7 @@
             "Hush... Hush, Sweet Charlotte (1964)"
         ]
     },
-    "38334": {
+    {
         "tmdb_id": 38334,
         "name": "Jennifer Coolidge",
         "gender": "FEMALE",
@@ -2353,7 +2353,7 @@
             "Promising Young Woman (2020)"
         ]
     },
-    "1267329": {
+    {
         "tmdb_id": 1267329,
         "name": "Lupita Nyong'o",
         "gender": "FEMALE",
@@ -2364,7 +2364,7 @@
             "Us (2019)"
         ]
     },
-    "1200864": {
+    {
         "tmdb_id": 1200864,
         "name": "LaKeith Stanfield",
         "gender": "MALE",
@@ -2375,7 +2375,7 @@
             "Death Note (2017)"
         ]
     },
-    "3063": {
+    {
         "tmdb_id": 3063,
         "name": "Tilda Swinton",
         "gender": "FEMALE",
@@ -2386,7 +2386,7 @@
             "Only Lovers Left Alive (2014)"
         ]
     },
-    "10460": {
+    {
         "tmdb_id": 10460,
         "name": "Richard Kiel",
         "gender": "MALE",
@@ -2397,7 +2397,7 @@
             "Moonraker (1979)"
         ]
     },
-    "819": {
+    {
         "tmdb_id": 819,
         "name": "Edward Norton",
         "gender": "MALE",
@@ -2408,4 +2408,4 @@
             "American History X (1998)"
         ]
     }
-}
+];
