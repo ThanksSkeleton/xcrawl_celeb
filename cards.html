@@ -20,6 +20,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0in;
+      page-break-after: always;
     }
 
     .card {
@@ -83,16 +84,22 @@
     const USE_JS_DATA = true;
   </script>
   <script src="cards.js" defer></script>
+  <script src="headshot_overrides.js" defer></script>
 </head>
 <body>
-  <div class="page" id="card-container"></div>
+  <div id="card-root"></div>
 
   <script>
-    function renderCard(card, container) {
-      const cardHTML = `
+    function renderCard(card) {
+      const headshot = headshotOverrides[card.tmdb_id];
+      if (!headshot) {
+        console.error(`No headshot override found for card ID: ${card.tmdb_id}`);
+        return '';
+      }
+      return `
         <div class="card">
           <div class="card-content">
-            <img class="photo" src="${card.headshot}" alt="${card.name}">
+            <img class="photo" src="${headshot}" alt="${card.name}">
             <div class="text">
               <div class="name">${card.name}</div>
               <div class="credits">${card.credits.join('<br>')}</div>
@@ -100,38 +107,34 @@
           </div>
         </div>
       `;
-      container.insertAdjacentHTML('beforeend', cardHTML);
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('card-container');
+      const root = document.getElementById('card-root');
 
-      if (!USE_JS_DATA) {
-        const example = {
-          name: "Tom Hanks",
-          headshot: "https://image.tmdb.org/t/p/original/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
-          credits: [
-            "Toy Story (1995)",
-            "The Green Mile (1999)",
-            "Forrest Gump (1994)"
-          ]
-        };
-        for (let i = 0; i < 9; i++) {
-          renderCard(example, container);
-        }
-      } else {
-        if (typeof cardData !== 'undefined') {
-          cardData.forEach((card, index) => {
-            renderCard(card, container);
-            if ((index + 1) % 9 === 0) {
-              const pageBreak = document.createElement('div');
-              pageBreak.className = 'page-break';
-              container.appendChild(pageBreak);
-            }
-          });
-        } else {
-          console.error('cardData is not defined. Ensure cards.js is loaded.');
-        }
+      const example = {
+        tmdb_id: 31,
+        name: "Tom Hanks",
+        headshot: "https://image.tmdb.org/t/p/original/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+        credits: [
+          "Toy Story (1995)",
+          "The Green Mile (1999)",
+          "Forrest Gump (1994)"
+        ]
+      };
+
+      const data = USE_JS_DATA && typeof cardData !== 'undefined' ? Object.values(cardData) : Array(9).fill(example);
+
+      for (let i = 0; i < data.length; i += 9) {
+        const page = document.createElement('div');
+        page.className = 'page';
+
+        const slice = data.slice(i, i + 9);
+        slice.forEach(card => {
+          page.insertAdjacentHTML('beforeend', renderCard(card));
+        });
+
+        root.appendChild(page);
       }
     });
   </script>

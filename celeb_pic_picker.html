@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pre-Production Pic Picker</title>
+  <style>
+    .photo {
+      width: 1.5075in;
+      height: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(100%) brightness(1.1) contrast(1.1);
+    }
+    .controls {
+      margin-top: 1rem;
+    }
+    button {
+      margin: 0.25rem;
+    }
+  </style>
+  <script src="cards.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h2 id="celeb-name"></h2>
+    <img id="celeb-photo" class="photo" src="" alt="Celebrity Headshot">
+    <div class="controls">
+      <button id="prev-photo">&lt;==</button>
+      <button id="next-photo">==&gt;</button>
+      <button id="accept-photo">Accept</button>
+    </div>
+  </div>
+
+  <script>
+    const DEV = false;
+
+    const tom_hanks_proto = {
+      gender: 'MALE',
+      headshots: [
+        'https://image.tmdb.org/t/p/original/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg',
+        'https://image.tmdb.org/t/p/original/oFvZoKI6lvU03n4YoNGAll9rkas.jpg',
+        'https://image.tmdb.org/t/p/original/sou8CHR4z5Mh2CpyUHxi7t0fnO4.jpg',
+        'https://image.tmdb.org/t/p/original/eGl2MpUqzcoAj75YoE6iTHVGhU7.jpg',
+        'https://image.tmdb.org/t/p/original/mKr8PN8sn80LzVaZMg8L52kmakm.jpg',
+        'https://image.tmdb.org/t/p/original/xndWFsBlClOJFRdhSt4NBwiPq2o.jpg',
+        'https://image.tmdb.org/t/p/original/sjzxil5RNdkeadWdcHBxkmsOjvC.jpg',
+        'https://image.tmdb.org/t/p/original/1QZRIBynhcbf2vAl3ZvvFUFfDCV.jpg',
+        'https://image.tmdb.org/t/p/original/2gY92j2lkNHL2cThBhPmgXLd5PL.jpg',
+        'https://image.tmdb.org/t/p/original/nMycpQMTNp2aUisZ0qzcGD4LJts.jpg',
+        'https://image.tmdb.org/t/p/original/tAyAXPLnR9Sgi7x2lMV4PUPitai.jpg',
+        'https://image.tmdb.org/t/p/original/g0JvDnfap6WnNvCgYUu79RGtyDO.jpg',
+        'https://image.tmdb.org/t/p/original/lv20WQMfg7aGqw4M44XScx9URuV.jpg',
+        'https://image.tmdb.org/t/p/original/5h5L1YG5VVTdNGYmJGfI9qU6wEq.jpg',
+        'https://image.tmdb.org/t/p/original/xV5zba3TFMcs1ZS8lxmOlJ1S6Fo.jpg',
+        'https://image.tmdb.org/t/p/original/zGU5tg7fR9WCu8yULudO23l301m.jpg',
+        'https://image.tmdb.org/t/p/original/2zuXv6kguyMjBbNqr7Chxx5upVD.jpg',
+        'https://image.tmdb.org/t/p/original/2Z6uJx9OdeqGOy8FaDv18f5ZG4r.jpg',
+        'https://image.tmdb.org/t/p/original/t6kFuln1OsSk6Kwywm6SI3dCBBO.jpg'
+      ],
+      credits: ['The Green Mile (1999)', 'Toy Story (1995)', 'Forrest Gump (1994)']
+    };
+
+    const testData = [
+      { ...tom_hanks_proto, name: 'Tom Hanks 1', tmdb_id: 31 },
+      { ...tom_hanks_proto, name: 'Tom Hanks 2', tmdb_id: 32 },
+      { ...tom_hanks_proto, name: 'Tom Hanks 3', tmdb_id: 33 }
+    ];
+
+    const celebData = DEV ? testData : cardData;
+
+    let celebIndex = 0;
+    let photoIndex = 0;
+    const overrides = {};
+
+    const celebNameEl = document.getElementById('celeb-name');
+    const celebPhotoEl = document.getElementById('celeb-photo');
+    const prevPhotoBtn = document.getElementById('prev-photo');
+    const nextPhotoBtn = document.getElementById('next-photo');
+    const acceptBtn = document.getElementById('accept-photo');
+
+    function render() {
+      const celeb = celebData[celebIndex];
+      const photoUrl = celeb.headshots[photoIndex];
+      celebNameEl.textContent = celeb.name;
+      celebPhotoEl.src = photoUrl;
+    }
+
+    prevPhotoBtn.onclick = () => {
+      const celeb = celebData[celebIndex];
+      photoIndex = (photoIndex - 1 + celeb.headshots.length) % celeb.headshots.length;
+      render();
+    };
+
+    nextPhotoBtn.onclick = () => {
+      const celeb = celebData[celebIndex];
+      photoIndex = (photoIndex + 1) % celeb.headshots.length;
+      render();
+    };
+
+    acceptBtn.onclick = () => {
+      const celeb = celebData[celebIndex];
+      overrides[celeb.tmdb_id] = celeb.headshots[photoIndex];
+      if (celebIndex < celebData.length - 1) {
+        celebIndex++;
+        photoIndex = 0;
+        render();
+      } else {
+        const blob = new Blob([
+          'const headshotOverrides = ' + JSON.stringify(overrides, null, 2) + ';'
+        ], { type: 'application/javascript' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'headshot_overrides.txt';
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+    };
+
+    render();
+  </script>
+</body>
+</html>
